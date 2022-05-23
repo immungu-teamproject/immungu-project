@@ -12,7 +12,7 @@ public class SampleController {
 	
 	@RequestMapping(value = "/sample.do")
 	public String sample() {
-		return "sample/sample"; 
+		return "common/home"; 
 	}
 	
 }
