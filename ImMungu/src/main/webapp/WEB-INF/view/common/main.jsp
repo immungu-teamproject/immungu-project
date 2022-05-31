@@ -137,7 +137,7 @@
 		      <img src="resources/images/mainImage2.png" alt="mainImage1" width="1100" height="300">
 		    </div>
 		    <div class="carousel-item">
-		      <img src="resources/images/mainImage3.png" alt="mainImage1" width="1100" height="300">
+		      <img src="resources/images/mainImage3.png" alt="mainImage1">
 		    </div>
 		  </div>
 		
