@@ -6,16 +6,35 @@
 	<head>
 	  <title>아임문구-문구팬시점</title>
 	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  
+	  <meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Immungu" />
+		<meta property="og:title" content="Immungu" />
+		<meta property="og:description" content="아임문구는 문구팬시도매쇼핑몰입니다." />
+		<meta property="og:image" content="resources/images/mainLogo.png" />
+		<meta property="og:url" content="http://imungu.com" />
+
+		<meta property="twitter:card" content="summary" />
+		<meta property="twitter:site" content="Immungu" />
+		<meta property="twitter:title" content="Immungu" />
+		<meta property="twitter:description" content="아임문구는 문구팬시도매쇼핑몰입니다." />
+		<meta property="twitter:image" content="resources/images/mainLogo.png" />
+		<meta property="twitter:url" content="http://imungu.com" />
+
 	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	  <link rel="stylesheet" href="resources/css/main.css">
+	  
 	  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 	  
 	  <style>
 	  .carousel-inner {
-	  	width: 1100px;
-	  	height: 500px;
+	  	width: 100%;
+	  	height: 700px;
 	  }
 	  
 	  .carousel-inner img {
@@ -23,50 +42,82 @@
 	    height: 100%;
 	  }
 	  
-	  ul {
-	  	list-style:none;
-	  }
-	  
-	  li {
-	  	float: left;
-	  	margin-right: 20px;
-	  }
-	  
-	  .mainLogo img {
-	  	width: 200px;
-	  	height: 100px;
-	  }
+
 	  
 	  </style>
 	</head>
-
 	<body>
-		<!-- header -->
-		<div id="header">
-			<div class="headerTop">
-				<ul>
-					<li>로그인</li>
-					<li>회원가입</li>
-					<li>장바구니</li>
-					<li>주문조회</li>
-					<li>마이페이지</li>
-				</ul>
+	
+		<!-- HEADER -->
+		<header>
+			<div class="inner">
+				<div class="sub-menu">
+					<ul class="menu">
+						<li>
+							<a href="javascript:void(0)">로그인</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">회원가입</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">장바구니</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">주문조회</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">마이페이지</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">문의하기</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		
-		<!-- 메인 로고 -->
-		<div id="mainLogo">
-			<img src="resources/images/mainLogo.png" alt="mainLogo">
-		</div>
-		
-		<div>
-			<ul>
-				<li>신상품</li>
-				<li>가격대별</li>
-				<li>학용품</li>
-				<li>필기류</li>
-				<li>수첩/스티커</li>
-			</ul>
+		</header>
+
+				<!-- 메인 로고 -->
+				<div class= "headerMiddle">
+					<div class="mainLogo">
+						<img src="resources/images/mainLogo.png" alt="mainLogo">
+					</div>
+					
+					<div class="search">
+						<div class="material-icons">search</div>
+						<input type="text"/>
+					</div>
+				</div>
+	
+			<hr class="hr-solid" />
+			
+		<div class="productCategory">
+			<div class="inner">
+				<div class="productGlobalcategory">
+					<ul class="productmenu">
+						<li>
+							<a href="javascript:void(0)">ALL</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">신상품</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">가격대별</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">학용품</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">필기류</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">수첩/스티커</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">필통류</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		
 		<div id="demo" class="carousel slide" data-ride="carousel">
