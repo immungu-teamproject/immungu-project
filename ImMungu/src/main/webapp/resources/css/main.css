@@ -18,19 +18,27 @@ li {
 	margin: 0 auto;
 	position: relative;
 }
-
-/* HEADER */
-header {
+.hr-solid {
+  border : 0px;
+  border-top: 5px solid #000;
 }
 
-header .inner {
+/* HEADER */
+.header .top_banner {
+	height: 40px;
+	background-color: black;
+	color: white;
+	font-size: small;
+}
+
+.header .inner {
 	width: 1400px;
 	height: 48px;
 	margin: 0 auto;
 	position: relative;
 }
 
-header .sub-menu {
+.header .sub-menu {
 	width: 600px;
 	height: 31px;
 	position: absolute;
@@ -41,16 +49,16 @@ header .sub-menu {
 	display: flex;
 }
 
-header .sub-menu ul.menu {
+.header .sub-menu ul.menu {
 	display: flex;
 }
 
-header .sub-menu ul.menu li {
+.header .sub-menu ul.menu li {
 	text-decoration: none;
 	position: relative;
 }
 
-header .sub-menu ul.menu li::before {
+.header .sub-menu ul.menu li::before {
 	content: "";
 	width: 1px;
 	height: 10px;
@@ -61,11 +69,11 @@ header .sub-menu ul.menu li::before {
 	margin: auto;
 }
 
-header .sub-menu ul.menu li:first-child::before {
+.header .sub-menu ul.menu li:first-child::before {
 	display: none;
 }
 
-header .sub-menu ul.menu li a {
+.header .sub-menu ul.menu li a {
 	font-size: 14px;
 	padding: 11px 16px;
 	display: block;
@@ -74,24 +82,22 @@ header .sub-menu ul.menu li a {
 	text-decoration: none;
 }
 
-header .sub-menu ul.menu li a:hover {
+.header .sub-menu ul.menu li a:hover {
 	color: #000;
 }
 
 .headerMiddle {
-	background-color: blue;
 }
 
 .headerMiddle .search {
 	height: 30px;
-	background-color: orange;
 }
 
 .headerMiddle .search .searchInput {
 }
 
 .headerMiddle .search input {
-	width: 50px;
+	width: 80px;
 /* 	right: 0; */
 /* 	margin: auto;
 	position: absolute; */
@@ -127,11 +133,6 @@ header .sub-menu .search .material-icons {
 	height: 120px;
 }
 
-.hr-solid {
-  border : 0px;
-  border-top: 5px solid #000;
-}
-
 .productCategory {
 	position: relative;
  }
@@ -161,4 +162,67 @@ header .sub-menu .search .material-icons {
 	left: 0;
 	right: 0;
 	margin: auto; /* auto auto라 auto 하나는 생략  */
+ }
+ 
+ /* FOOTER */
+ footer .inner {
+ 	width: 1400px;
+	height: 48px;
+	margin: 0 auto;
+	position: relative;
+ }
+ 
+ footer .footerTopUtil {
+	width: 600px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	display: flex;
+ }
+ 
+ footer .footerTopUtil ul.footermenu {
+ 	display: flex;
+ }
+ 
+ footer .footerTopUtil ul.footermenu li {
+ 	text-decoration: none;
+	position: relative;
+ }
+ 
+ footer .footerTopUtil ul.footermenu li::before {
+	content: "";
+	width: 1px;
+	height: 10px;
+	background-color: gray;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+ }
+ 
+ footer .footerTopUtil ul.footermenu li:first-child::before {
+ 	display: none;
+ }
+ 
+ footer .footerTopUtil ul.footermenu li a {
+ 	font-size: 14px;
+	padding: 11px 16px;
+	display: block;
+	color: #656565;
+	font-weight: bold;
+	text-decoration: none;
+ }
+ 
+footer .footerTopUtil ul.footermenu li a:hover {
+	color: #000;
+}
+ 
+ footer .footerContent {
+ 	/* background-color: yellow; */
+ }
+ 
+ footer .layout-footer {
+ 	/* background-color: green; */
  }

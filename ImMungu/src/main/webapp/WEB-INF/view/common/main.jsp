@@ -42,53 +42,12 @@
 	    height: 100%;
 	  }
 	  
-
-	  
 	  </style>
 	</head>
+	
 	<body>
-	
 		<!-- HEADER -->
-		<header>
-			<div class="inner">
-				<div class="sub-menu">
-					<ul class="menu">
-						<li>
-							<a href="javascript:void(0)">로그인</a>
-						</li>
-						<li>
-							<a href="javascript:void(0)">회원가입</a>
-						</li>
-						<li>
-							<a href="javascript:void(0)">장바구니</a>
-						</li>
-						<li>
-							<a href="javascript:void(0)">주문조회</a>
-						</li>
-						<li>
-							<a href="javascript:void(0)">마이페이지</a>
-						</li>
-						<li>
-							<a href="javascript:void(0)">문의하기</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</header>
-
-				<!-- 메인 로고 -->
-				<div class= "headerMiddle">
-					<div class="mainLogo">
-						<img src="resources/images/mainLogo.png" alt="mainLogo">
-					</div>
-					
-					<div class="search">
-						<div class="material-icons">search</div>
-						<input type="text"/>
-					</div>
-				</div>
-	
-			<hr class="hr-solid" />
+		<jsp:include page="header.jsp"></jsp:include>
 			
 		<div class="productCategory">
 			<div class="inner">
@@ -129,7 +88,7 @@
 		  </ul>
 		  
 		  <!-- 슬라이드쇼 -->
-		  <div class="carousel-inner">
+			<div class="carousel-inner">
 		    <div class="carousel-item active">
 		      <img src="resources/images/mainImage1.png" alt="mainImage1" width="1100" height="300">
 		    </div>
@@ -149,57 +108,11 @@
 		    <span class="carousel-control-next-icon"></span>
 		  </a>
 		</div>
-		
-		<!-- footer -->
-		<div id="footer">
-			<div class="footerTopUtil ">
-				<ul>
-					<li>홈</li>
-					<li>회사소개</li>
-					<li>이용약관</li>
-					<li>개인정보처리방침</li>
-					<li>이용안내</li>
-					<li>고객센터</li>
-				</ul>
-				
-				<br/>
-				
-				<div class="footerContent">
-					<div class="footerCs -moveDom">
-						아이문구 고객센터
-						1577-236X
-						월~금요일 오전9:00~오후5:00
-						토/일요일 및 공휴일은 휴무입니다
-					</div>
-					<div class="footerBank -moveDom">
-						BANK INFO
-						국민은행 777101-01-22837X
-						농협 601180-56-20268X
-						우체국 502997-02-23459X
-						예금주 정윤X
-					</div>
-				</div>
-				
-				<div class="layout-footer ">
-					<div class="Layout_footerL">
-						<p class="address">
-							법인명(상호):아임문구 대표자(성명):정윤X
-							사업자 등록번호 안내:[410-06-3656X]
-							통신판매업 신고 2009-광주서구-002XX
-							전화: 1577-236X
-							팩스: 062-573-053X
-							주소: 62010 광주광역시 서구 풍서우로 28X (벽진동)
-							개인정보보호책임자:정윤X(immungu001X@daum.net)
-						</p>
-						<p class="copyright">
-							Copyright © 2017
-							<strong>아임문구 - 문구/팬시도매쇼핑몰</strong>
-							. All rights reserved.
-						</p>
-					</div>
-				</div>
 
-			</div><!-- footerTopUtil -->
-		</div><!-- footer -->
+		<hr class="hr-solid" />
+					
+		<!-- footer -->
+		<jsp:include page="footer.jsp"></jsp:include>
+		
 	</body>
 </html>
